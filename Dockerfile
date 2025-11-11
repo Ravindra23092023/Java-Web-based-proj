@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM openjdk:17-jdk
 WORKDIR /app
 COPY target/maven-web-application.war /app/maven-web-application.war
 EXPOSE 8080
