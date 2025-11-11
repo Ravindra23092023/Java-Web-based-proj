@@ -5,7 +5,7 @@ LABEL maintainer="ravindra@example.com"
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy WAR file to Tomcat webapps
-COPY target/myapp.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/maven-web-application.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8081
 CMD ["catalina.sh", "run"]
